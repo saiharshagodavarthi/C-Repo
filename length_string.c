@@ -1,0 +1,18 @@
+#include<stdio.h>
+int stringLength(const char *str)
+{
+    int length = 0;
+    while (str[length] != '\0') 
+	{
+        length++;
+    }
+    return length;
+}
+int main() 
+{
+    char str[] = "sai";
+    int length = stringLength(str);
+    printf("Length of the string: %d\n", length);
+    return 0;
+}
+
